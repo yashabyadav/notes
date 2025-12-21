@@ -1,3 +1,354 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+
+// ------------------------------------------
+// Blue Topaz inspired folder colors
+// ------------------------------------------
+:root {
+  // Colorful folder palette from Blue Topaz
+  --folder-color-1: #88C0D0;  // Frost cyan
+  --folder-color-2: #81A1C1;  // Frost blue
+  --folder-color-3: #5E81AC;  // Frost deep blue
+  --folder-color-4: #A3BE8C;  // Aurora green
+  --folder-color-5: #EBCB8B;  // Aurora yellow
+  --folder-color-6: #D08770;  // Aurora orange
+  --folder-color-7: #BF616A;  // Aurora red
+  --folder-color-8: #B48EAD;  // Aurora purple
+  --folder-color-9: #8FBCBB;  // Frost teal
+  --folder-color-10: #94b4a4; // Sage green
+}
+
+// ------------------------------------------
+// Colorful Explorer Folders
+// ------------------------------------------
+.explorer {
+  // Target li elements that contain folder-outer (these are folder items)
+  // Apply colors based on position within the explorer
+
+  // First level folders get distinct colors
+  ul.overflow > li:has(.folder-outer):nth-child(10n+1) {
+    & > .folder-container {
+      .folder-icon {
+        color: var(--folder-color-1);
+      }
+      .folder-button span,
+      > div > a {
+        color: var(--folder-color-1);
+      }
+    }
+  }
+
+  ul.overflow > li:has(.folder-outer):nth-child(10n+2) {
+    & > .folder-container {
+      .folder-icon {
+        color: var(--folder-color-2);
+      }
+      .folder-button span,
+      > div > a {
+        color: var(--folder-color-2);
+      }
+    }
+  }
+
+  ul.overflow > li:has(.folder-outer):nth-child(10n+3) {
+    & > .folder-container {
+      .folder-icon {
+        color: var(--folder-color-3);
+      }
+      .folder-button span,
+      > div > a {
+        color: var(--folder-color-3);
+      }
+    }
+  }
+
+  ul.overflow > li:has(.folder-outer):nth-child(10n+4) {
+    & > .folder-container {
+      .folder-icon {
+        color: var(--folder-color-4);
+      }
+      .folder-button span,
+      > div > a {
+        color: var(--folder-color-4);
+      }
+    }
+  }
+
+  ul.overflow > li:has(.folder-outer):nth-child(10n+5) {
+    & > .folder-container {
+      .folder-icon {
+        color: var(--folder-color-5);
+      }
+      .folder-button span,
+      > div > a {
+        color: var(--folder-color-5);
+      }
+    }
+  }
+
+  ul.overflow > li:has(.folder-outer):nth-child(10n+6) {
+    & > .folder-container {
+      .folder-icon {
+        color: var(--folder-color-6);
+      }
+      .folder-button span,
+      > div > a {
+        color: var(--folder-color-6);
+      }
+    }
+  }
+
+  ul.overflow > li:has(.folder-outer):nth-child(10n+7) {
+    & > .folder-container {
+      .folder-icon {
+        color: var(--folder-color-7);
+      }
+      .folder-button span,
+      > div > a {
+        color: var(--folder-color-7);
+      }
+    }
+  }
+
+  ul.overflow > li:has(.folder-outer):nth-child(10n+8) {
+    & > .folder-container {
+      .folder-icon {
+        color: var(--folder-color-8);
+      }
+      .folder-button span,
+      > div > a {
+        color: var(--folder-color-8);
+      }
+    }
+  }
+
+  ul.overflow > li:has(.folder-outer):nth-child(10n+9) {
+    & > .folder-container {
+      .folder-icon {
+        color: var(--folder-color-9);
+      }
+      .folder-button span,
+      > div > a {
+        color: var(--folder-color-9);
+      }
+    }
+  }
+
+  ul.overflow > li:has(.folder-outer):nth-child(10n+10) {
+    & > .folder-container {
+      .folder-icon {
+        color: var(--folder-color-10);
+      }
+      .folder-button span,
+      > div > a {
+        color: var(--folder-color-10);
+      }
+    }
+  }
+
+  // Nested folders inherit parent color scheme but slightly muted
+  .folder-outer ul > li:has(.folder-outer) {
+    & > .folder-container {
+      opacity: 0.9;
+    }
+  }
+
+  // Make folder text slightly bolder and add hover effect
+  .folder-button {
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  .folder-icon {
+    transition: color 0.2s ease, transform 0.3s ease;
+  }
+
+  // File items remain in theme's secondary color
+  li > a:not(.folder-button) {
+    color: var(--gray);
+    
+    &:hover {
+      color: var(--darkgray);
+    }
+  }
+}
+
+// ------------------------------------------
+// Subtle monochrome refinements
+// ------------------------------------------
+
+// Softer borders
+hr {
+  border-color: var(--lightgray);
+  opacity: 0.5;
+}
+
+// Card-like callouts with subtle styling
+.callout {
+  border-left-width: 3px;
+  background-color: color-mix(in srgb, var(--lightgray) 30%, transparent);
+}
+
+// Cleaner blockquotes
+blockquote {
+  border-left: 3px solid var(--gray);
+  background-color: transparent;
+  padding-left: 1rem;
+  opacity: 0.9;
+}
+
+// Code blocks with subtle background
+pre {
+  background-color: color-mix(in srgb, var(--lightgray) 50%, var(--light)) !important;
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+}
+
+// Inline code
+code:not(pre code) {
+  background-color: color-mix(in srgb, var(--lightgray) 60%, transparent);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+// ------------------------------------------
+// Graph view colors (Blue Topaz inspired)
+// ------------------------------------------
+.graph {
+  & > svg {
+    // Node colors will use the secondary color
+    .node circle {
+      fill: var(--secondary);
+      opacity: 0.8;
+    }
+
+    .node.active circle {
+      fill: var(--tertiary);
+    }
+
+    // Links are subtle
+    .link {
+      stroke: var(--gray);
+      stroke-opacity: 0.3;
+    }
+  }
+}
+
+// ------------------------------------------
+// Tags with subtle color
+// ------------------------------------------
+a.internal.tag-link {
+  background-color: color-mix(in srgb, var(--secondary) 15%, transparent);
+  color: var(--secondary);
+  border-radius: 4px;
+  padding: 0.1em 0.5em;
+  font-size: 0.85em;
+  
+  &:hover {
+    background-color: color-mix(in srgb, var(--secondary) 25%, transparent);
+  }
+}
+
+// ------------------------------------------
+// Table of contents accent
+// ------------------------------------------
+.toc {
+  .depth-1 > a {
+    font-weight: 500;
+  }
+  
+  a {
+    &.in-view {
+      color: var(--secondary);
+    }
+  }
+}
+
+// ------------------------------------------
+// Backlinks subtle styling
+// ------------------------------------------
+.backlinks {
+  h3 {
+    font-size: 0.9rem;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  ul {
+    padding-left: 0;
+    
+    li {
+      list-style: none;
+      padding: 0.25rem 0;
+      border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 50%, transparent);
+      
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+// ------------------------------------------
+// Search modal refinements
+// ------------------------------------------
+#search-container {
+  #search-space {
+    background-color: var(--light);
+    border: 1px solid var(--lightgray);
+  }
+}
+
+// ------------------------------------------
+// Footer subtle styling
+// ------------------------------------------
+footer {
+  opacity: 0.7;
+  font-size: 0.85rem;
+}
+
+// ------------------------------------------
+// Page title and header refinements
+// ------------------------------------------
+article > h1 {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+// ------------------------------------------
+// Dark mode specific adjustments
+// ------------------------------------------
+:root[saved-theme="dark"] {
+  // Slightly more visible borders in dark mode
+  pre {
+    border-color: var(--gray);
+    background-color: color-mix(in srgb, var(--lightgray) 80%, var(--light)) !important;
+  }
+
+  // Brighter folder colors in dark mode for better visibility
+  --folder-color-1: #8FBCBB;  // Lighter cyan
+  --folder-color-2: #88C0D0;  // Lighter blue
+  --folder-color-3: #81A1C1;  // Medium blue
+  --folder-color-4: #A3BE8C;  // Green (same)
+  --folder-color-5: #EBCB8B;  // Yellow (same)
+  --folder-color-6: #D08770;  // Orange (same)
+  --folder-color-7: #BF616A;  // Red (same)
+  --folder-color-8: #B48EAD;  // Purple (same)
+  --folder-color-9: #8FBCBB;  // Teal (same)
+  --folder-color-10: #94b4a4; // Sage (same)
+
+  // File links slightly brighter in dark mode
+  .explorer li > a:not(.folder-button) {
+    color: var(--gray);
+    
+    &:hover {
+      color: var(--darkgray);
+    }
+  }
+}

@@ -2,21 +2,19 @@ import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
 /**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
+ * Quartz 4 Configuration - Yash's Digital Garden
+ * Theme: Monochrome with Blue Topaz accents
+ * Matches yashabyadav.github.io aesthetic
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "Yashab's Notes",
+    pageTitleSuffix: " | Digital Garden",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "yashabyadav.github.io/notes",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -25,30 +23,30 @@ const config: QuartzConfig = {
       typography: {
         header: "Schibsted Grotesk",
         body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#f8f8f8",        // Clean white background
+          lightgray: "#e8e8e8",    // Subtle borders
+          gray: "#7f7f7f",         // Muted text
+          darkgray: "#2a2a2a",     // Body text
+          dark: "#1a1a1a",         // Headlines
+          secondary: "#2d82cc",    // Blue Topaz accent (links)
+          tertiary: "#52c7b2",     // Blue Topaz green (hover)
+          highlight: "rgba(45, 130, 204, 0.12)",
+          textHighlight: "#ffd35188", // Blue Topaz yellow highlight
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#151515",        // Dark background (matches your website)
+          lightgray: "#222222",    // Subtle card/border color
+          gray: "#4a4a4a",         // Muted elements
+          darkgray: "#c6c6c6",     // Body text (matches your site)
+          dark: "#e4e4e4",         // Headlines/bright text
+          secondary: "#88C0D0",    // Blue Topaz frost cyan (links)
+          tertiary: "#a4ca8e",     // Blue Topaz green (hover)
+          highlight: "rgba(136, 192, 208, 0.12)",
+          textHighlight: "#ebcb8b55", // Blue Topaz yellow highlight
         },
       },
     },
@@ -88,8 +86,6 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
     ],
   },
 }
