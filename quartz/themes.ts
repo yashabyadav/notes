@@ -1,8 +1,6 @@
 // quartz/themes.ts
 // Centralized color palettes for different themes
 
-import { Darkmode } from "./components"
-
 export type ThemePalette = {
   lightMode: Record<string, string>,
   darkMode: Record<string, string>,
