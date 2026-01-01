@@ -3,21 +3,26 @@ title: Welcome to My Digital Garden
 date: 2025-12-01
 ---
 
-# Welcome to My Digital Garden
+These notes are published directly from my Obsidian vault. Only notes that I’ve
+intentionally marked for public viewing appear here.
 
-These notes are synced from my Obsidian vault. Only notes I've marked for publication appear here.
+This space is meant to be a living, evolving collection of working notes rather
+than polished articles. Many entries are exploratory, incomplete, or mid-thought,
+reflecting how ideas develop over time during research and learning.
 
-If anything seems incomplete or incoherent, that's because these notes are meant mainly for me. 
+Publishing my notes is an experiment in thinking in the open, inspired by the idea
+of <u>working with the garage door up</u>:
+[About these notes – Andy Matuschak](https://notes.andymatuschak.org/About_these_notes?stackedNotes=z21cgR9K3UcQ5a7yPsj2RUim3oM2TzdBByZu).
 
-And also because I sometimes get distracted by the act of note taking itself, and then I end up not having the energy to finish a note that I started. 
+If you’re new to the concept of a digital garden, this discussion offers a good
+starting point:
+[What is a digital garden?](https://www.reddit.com/r/bearapp/comments/178o4gy/what_is_a_digital_garden/)
 
-I hope that putting my working notes online, I'll be more mindful of the information I want to capture. This is inspired by the idea of [working with your garage door up](https://notes.andymatuschak.org/About_these_notes?stackedNotes=z21cgR9K3UcQ5a7yPsj2RUim3oM2TzdBByZu)
+The organization of notes reflects how they are created and linked in practice,
+and may change over time as this garden grows and evolves.
 
-To read  more about the idea of a digital garden, [this reddit](https://www.reddit.com/r/bearapp/comments/178o4gy/what_is_a_digital_garden/) discussion might be a good place to start.
+**This is a work in progress, and the set of public notes will expand and shift
+over time.**
 
-Currently, my notes are all over the place especially. Some notes may be in folders where they probably should not be. This is because when working in Obsidian, creating a note from a file embed creates the new note in the same folder as the file in which the embed was created.
+Feel free to explore using the **graph view**, **search**, or browse by **[[tags]]**.
 
-**This is a work in progress. I am going through my vault to see which files I want public.**
-
-
-Feel free to explore using the **graph view** or **search**!

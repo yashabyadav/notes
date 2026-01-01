@@ -33,9 +33,10 @@ The **FH2 domain** forms a stable, donut-shaped homodimer that acts as the "anch
 <u>Flashcards</u>
 
 The ==FH2 domain== of formins act as an anchor to the polymerizing actin filament.
+<!--SR:!2025-12-29,4,277-->
 
 Formins need to come together as a ==homodimer== at ==FH2== domains to be able to function as polymerization promoting factor of F-actin.
-<!--SR:!2025-12-21,4,270!2025-12-21,4,270-->
+<!--SR:!2026-01-09,15,290!2026-01-08,14,290-->
 
 ---
 
@@ -47,9 +48,9 @@ The **FH1 domains** are long, flexible, "intrinsically disordered" regions that 
 <u>Flashcards</u>
 
 Which domain of Formins is proline rich?::FH1 domain
-<!--SR:!2025-12-21,4,270-->
+<!--SR:!2025-12-27,2,250-->
 The FH1 domain is ==proline==-rich which serves as the binding site for ==ATP==-actin.
-<!--SR:!2025-12-21,4,270!2000-01-01,1,250-->
+<!--SR:!2026-01-10,16,290!2025-12-26,1,237-->
 
 ---
 ## Function

@@ -77,26 +77,27 @@ function extractAttachments(content) {
 
 // Find attachment in vault (could be in Media folder or elsewhere)
 function findAttachment(filename, vaultPath) {
+  // Use ZZ0 Media instead of Media
   const searchPaths = [
-    path.join(vaultPath, 'Media', filename),
-    path.join(vaultPath, 'Media', 'Academic Papers', filename),
-    path.join(vaultPath, 'Media', 'Academic Papers 2', filename),
+    path.join(vaultPath, 'ZZ0 Media', filename),
+    path.join(vaultPath, 'ZZ0 Media', 'Academic Papers', filename),
+    path.join(vaultPath, 'ZZ0 Media', 'Academic Papers 2', filename),
     path.join(vaultPath, filename),
   ];
-  
+
   for (const searchPath of searchPaths) {
     if (fs.existsSync(searchPath)) {
       return searchPath;
     }
   }
-  
-  // Recursive search in Media folder
-  const mediaPath = path.join(vaultPath, 'Media');
+
+  // Recursive search in ZZ0 Media folder
+  const mediaPath = path.join(vaultPath, 'ZZ0 Media');
   if (fs.existsSync(mediaPath)) {
     const found = findFileRecursive(mediaPath, filename);
     if (found) return found;
   }
-  
+
   return null;
 }
 
