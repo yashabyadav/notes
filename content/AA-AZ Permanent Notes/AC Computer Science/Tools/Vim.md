@@ -1,7 +1,24 @@
 ---
-tags: [productivity, vim-concept, ]
+tags: [productivity, vim-concept, linux, inbox, ]
 publish: true
 ---
+# 2026-01-05
+
+## Inserting/appending the same string in a bunch of lines:
+
+I find that I need to append multiple `>` when I am using callout boxes in [[Markdown|markdown]], when I paste text inside a callout box and the text has blank lines in it. This causes part of the pasted text to 'jump out' of the callout box and I have to manually add the `>` (single or multiple) to put the pasted text back in the callout box.
+
+Vim definitely makes it easy with `normal i` command:
+### Prefix a bunch of lines with `>>` (Visual-line + `:normal I`)
+
+1. Put cursor on the **first line you want to indent** 
+2. Enter Visual **line** mode:
+    `V`
+3. Select down to the last line you want inside the callout (use `j`, `}` for paragraph hops, or search for a boundary and jump).
+4. Run:
+    `:'<,'>normal I>>` 
+
+That inserts `>>` at the start of **every selected line**.
 
 # 2025-12-23
 
