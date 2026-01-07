@@ -26,7 +26,7 @@ const config: QuartzConfig = {
         body: "Source Sans Pro",
         code: "JetBrains Mono",
       },
-      colors: palettes[themeKeyword],
+    colors: palettes[themeKeyword],
     },
   },
   plugins: {

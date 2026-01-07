@@ -83,6 +83,7 @@ function findAttachment(filename, vaultPath) {
     path.join(vaultPath, 'ZZ0 Media', 'Academic Papers', filename),
     path.join(vaultPath, 'ZZ0 Media', 'Academic Papers 2', filename),
     path.join(vaultPath, filename),
+    path.join(vaultPath, 'EA-EZ Courses', filename),
   ];
 
   for (const searchPath of searchPaths) {
@@ -95,6 +96,13 @@ function findAttachment(filename, vaultPath) {
   const mediaPath = path.join(vaultPath, 'ZZ0 Media');
   if (fs.existsSync(mediaPath)) {
     const found = findFileRecursive(mediaPath, filename);
+    if (found) return found;
+  }
+
+  // Recursive search in EA-EZ Courses folder
+  const coursesPath = path.join(vaultPath, 'EA-EZ Courses');
+  if (fs.existsSync(coursesPath)) {
+    const found = findFileRecursive(coursesPath, filename);
     if (found) return found;
   }
 
