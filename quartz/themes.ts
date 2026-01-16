@@ -96,7 +96,8 @@ export const palettes: Record<string, ThemePalette> = {
         lightgray: "#708D81", //borders
         gray: "#363432",// graph links color
         darkgray: "#D4D4CA", //body text
-        dark: "#803329", //headers and icons
+        //dark: "#803329", //headers and icons
+        dark: "#B8BBA5", //headers and icons
         secondary: "#91362F", // node color in graph view
         tertiary: "#B8BBA5", //hover states and visited graph nodes
         highlight: "rgba(161, 98, 7, 0.12)", //internal link background, highlighted text, highlighted lines of code

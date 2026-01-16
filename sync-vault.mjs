@@ -93,7 +93,7 @@ function findAttachment(filename, vaultPath) {
   }
 
   // Recursive search in ZZ0 Media folder
-  const mediaPath = path.join(vaultPath, 'ZZ0 Media');
+  const mediaPath = path.join(vaultPath, 'Media');
   if (fs.existsSync(mediaPath)) {
     const found = findFileRecursive(mediaPath, filename);
     if (found) return found;
