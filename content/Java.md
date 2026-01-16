@@ -12,8 +12,7 @@ publish: true
 ---
 
 ## Getting started with Java:
-https://www.geeksforgeeks.org/python/abstract-classes-in-python/
-
+[[PHY380_JavaEclipseSetupGuide.pdf]]
 
 ## Java for physics simulations:
 - [[OSP_manual.pdf]]

@@ -11,3 +11,8 @@ publish: true
 	- Concise and well structured notes on basic thermodynamics, best for reviewing forgotten concepts.
 	- Link to PDF notes and exercises at the end of the page.
 
+2. [[9_thermodynamics_intro_Colloids_contd.pdf|Lecture 9 from Soft matter physics course]]
+	- An interlude on thermodynamics during the course.
+	- A very concise and quick review of systems in equilibrium separated by a boundary.
+
+

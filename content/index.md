@@ -27,3 +27,6 @@ over time.**
 
 Feel free to explore using the **graph view**, **search**, or browse by **[[tags]]**.
 
+## Acknowledgements:
+1. This website is made using [Quartz](https://github.com/jackyzha0/quartz).
+2. The color scheme I am using here is [Flexoki](https://stephango.com/flexoki) and is implemented using a script I found on [quartz-themes](https://github.com/saberzero1/quartz-themes).
