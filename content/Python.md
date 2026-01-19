@@ -16,4 +16,4 @@ publish: true
 - [Abstract classes in python](https://www.geeksforgeeks.org/python/abstract-classes-in-python/) similar to [[Java|Java abstract methods]] 
 
 # Related
-[[Scipy]]
+[[SciPy]]

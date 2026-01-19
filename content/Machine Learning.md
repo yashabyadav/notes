@@ -17,6 +17,16 @@ publish: true
 - https://udlbook.github.io/udlbook/
 	- Another free textbook with a full implementation of the topics in Google colab notebooks
 
+
+# Architectures
+
+## Squeeze and Excitation
+
+Original paper: [[@huSqueezeandExcitationNetworks2019]]
+
+![[Media/01_Week1_Jan_260115_123946.png]]
+
+[[01_Week1_Jan_260115_123946.pdf#page=4&rect=3,317,1603,2296|01_Week1_Jan_260115_123946, p.4]]
 # PHY 391
 
  [[EA-EZ Courses/EA Lehigh Fall 2024/Machine Learning/_Index_of_Machine Learning|_Index_of_Machine Learning]]
