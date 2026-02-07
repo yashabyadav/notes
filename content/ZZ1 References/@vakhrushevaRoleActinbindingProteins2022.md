@@ -26,6 +26,12 @@ publish: true
 ## Quotes / Figures
 > Important quotes/figures here
 
+
+> Many ABPs are composed of multiple domains that perform both regulatory and signaling functions. Some of them are [[Autoinhibition|auto-inhibited]] through intramolecular interactions
+
 ### actin related proteins summary figure:
 A nice image of the paper that quickly summarizes important actin related proteins:
 ![[Pasted image 20260109155617.png]]
+
+
+

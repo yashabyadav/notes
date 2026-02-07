@@ -3,9 +3,9 @@ tags:
   - actin-related-protein
   - protein-flashcards
   - actin-related-protein-flashcards
-website-folder: |
-  biologypublish: true
+publish: true
 ---
+
 
 Profilin prevents uncontrolled actin nucleation but **channels actin monomers into productive, barbed-end elongation**, especially in collaboration with nucleators like [[Formins]] — essentially acting as a **gatekeeper and supplier** for actin polymerization.
 

@@ -8,7 +8,7 @@ tags:
   - mathematical-Physics
   - classical-mechanics
   - thermodynamics
-  - thermodynamics-flashcards
+  - basics-flashcards
 ---
 
 Main reference: [[legendre-transforms-mungan-poster-2026-01-07.pdf]]

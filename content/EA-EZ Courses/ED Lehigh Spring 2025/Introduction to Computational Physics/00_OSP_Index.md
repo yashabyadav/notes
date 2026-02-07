@@ -45,6 +45,8 @@ Each section below links to a dedicated note with more detailed discussions of t
 - **View**: frames, plots, or 3D rendering.
 - **Control**: your user-interface logic and event-handlers.
 
+Schematic of model view control architecture (from [free code camp](https://www.freecodecamp.org/news/the-model-view-controller-pattern-mvc-architecture-and-frameworks-explained/))
+![[Pasted image 20260119195447.png]]
 In these notes, you'll see how each package fits into that pattern.
 
 **Continue with** [[01_Frames|Frames Package →]] for 2D/3D drawing frames and usage.
