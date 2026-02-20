@@ -92,3 +92,10 @@ Particularly, the **size control** of theses structures is of great importance (
 
 # Also check:
 [[Actin Isoforms]], [[G-actin structure and polymerization animation in blender]]
+
+
+## Essays
+
+These are some short essays as a part of this new learning method I am trying, where one writes essays about a topic to accelerate the recollection in the brain about said topic:
+
+- [[Actin cycle - The journey of actin inside a moving cell]]

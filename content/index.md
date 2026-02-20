@@ -2,7 +2,15 @@
 title: Welcome to My Digital Garden
 date: 2025-12-01
 ---
-
+                    _
+                  _(_)_   
+      @@@@       (_)@(_)  
+     @@()@@ wWWWw  (_)\   
+      @@@@  (___)     `|/ 
+       /      Y       \|  
+    \ |     \ |/       | /
+    \\|//   \\|///  \\\|//
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 These notes are published directly from my Obsidian vault. Only notes that I’ve
 intentionally marked for public viewing appear here.

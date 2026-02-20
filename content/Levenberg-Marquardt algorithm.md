@@ -4,7 +4,7 @@ modification date: Sunday 18th January 2026 16:39:15
 publish: true
 ---
 
-[[SciPy]] uses this algorithm for curve fitting.
+[[SciPy]] uses this algorithm for [[Curve fitting|curve fitting]].
 
 ![[Media/01_Week1_Jan_260115_123946 3.png]]
 
